@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex{
@@ -12,48 +19,156 @@
     justify-content: space-between;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .align-items{
     align-items: center;
 }
 
 header{
-    background-color: orange;
+    background-color: rgb(255, 105, 0);
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .container{
     margin: auto;
-    width: 80%;
+    width: 70%;
     color: white;
 }
 
-span{
+.menù{
     margin-right: 5px;
 }
 
-span:hover{
+.menù:hover{
     text-decoration-line: underline;
 }
 
-i:hover{
+.i-head{
+    margin-left: 5px;
+} 
+
+.i-head:hover{
     color: black;
 }
+
 .logo{
     width: 25%;
 }
 
-.cont2{
+.cont1{
     margin: auto;
-    width: 80%;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.cont2{
     margin-top: 50px;
 }
 
 .box{
     position: relative;
-    width: 300px;
+    width: 400px;
 }
+
 
 .img{
     width: 100%;
 }
 
+.heart{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.heart:hover{
+    color: crimson;
+}
+
+.img2{
+    display: none;
+}
+
+.box:hover .img1{
+    display: none;
+}
+
+.box:hover .img2{
+    display: block;
+}
+
+.text-int{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.text-est{
+    line-height: 16px;
+}
+
+.red{
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+}
+
+.green{
+    background-color: green;
+    color: white;
+    padding: 2px 6px;
+    margin-right: 6px;
+}
+
+.grey{
+    color: grey;
+}
+
+.text-red{
+    color: red;
+}
+
+.line{
+    display: inline-block;
+}
+
+.sbarra{
+    text-decoration-line: line-through;
+}
+
+footer{
+    background-color: black;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.cont3{
+    margin: auto;
+    width: 70%;
+    color: white;
+}
+
+.destra{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.left{
+    line-height: 30px;
+}
+
+.icon-f{
+    margin-left: 5px;
+}
